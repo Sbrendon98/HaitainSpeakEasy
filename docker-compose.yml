@@ -1,0 +1,31 @@
+version: '2.19.1'
+services:
+  back-end:
+    build:
+      context: ./back-end
+      dockerfile: Dockerfile
+    ports:
+      - "80:8000"
+    command: uvicorn api.app:app --host 0.0.0.0
+    volumes:
+      - ./back-end:/app
+    networks:
+      - haitianspeakeasy
+  front-end:
+    build:
+      context: ./front-end
+      dockerfile: Dockerfile
+    ports:
+      - "19000:8081"
+      - "19001:8082"
+      - "19002:19006"
+    environment:
+      - EXPO_DEVTOOLS_LISTEN_ADDRESS=192.168.1.167
+    command: npm start
+    volumes:
+      - ./front-end:/app/front-end
+    networks:
+      - haitianspeakeasy
+networks:
+  haitianspeakeasy:
+    driver: bridge
