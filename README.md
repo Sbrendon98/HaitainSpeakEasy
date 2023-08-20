@@ -8,7 +8,7 @@ An AI Language Conversation App Designed to help learn Haitian Creole
 
 | Feature                 | Percentage of Completion |
 |-------------------------|--------------------------|
-| Set up Dockerfile       | 100%                     |
+| Set up Dockerfile        | 100%                     |
 | Installed Expo Template | 100%                     |
 | Home Page               | 0%                       |
 | Chat History Feature    | 0%                       |
@@ -17,7 +17,7 @@ An AI Language Conversation App Designed to help learn Haitian Creole
 
 | Feature                      | Percentage of Completion |
 |------------------------------|--------------------------|
-| Set up Dockerfile            | 100%                     |
+| Set up Dockerfile             | 100%                     |
 | Created Requirements.txt     | 100%                     |
 | Set up FastAPI Routes        | 10%                      |
 | Models                       | 0%                       |
